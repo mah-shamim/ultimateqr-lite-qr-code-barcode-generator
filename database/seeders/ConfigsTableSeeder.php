@@ -65,8 +65,8 @@ class ConfigsTableSeeder extends Seeder
             'config_value' => 'green'
         ]);
         DB::table('configs')->insert([
-            'config_key' => 'default_language',
-            'config_value' => 'bn'
+            'config_key' => 'banner_image',
+            'config_value' => '/images/web/background/haque-it-solution.svg'
         ]);
         DB::table('configs')->insert([
             'config_key' => 'payment_gateway',
@@ -185,6 +185,10 @@ Made with ##APPNAME## by Your Company Name'
         DB::table('configs')->insert([
             'config_key' => 'saltKey',
             'config_value' => null
+        ]);
+        DB::table('configs')->insert([
+            'config_key' => 'default_language',
+            'config_value' => 'bn'
         ]);
     }
 }
